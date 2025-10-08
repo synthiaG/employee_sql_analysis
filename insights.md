@@ -42,7 +42,7 @@ Employess have no job history changes Indicating strong retention or lack of Int
  
 
 
-**Recommendation**
+## Recommendation
 Conduct a salary structure review to ensure equity across departments.
 
 Encourage internal mobility programs to retain and develop top talent.
