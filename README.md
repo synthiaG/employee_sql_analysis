@@ -7,7 +7,7 @@ The goal is to replicate real world data analysis tasks performed by data analys
 ### Tools and Technology
 **SQL (MYSQL)** - For querying data and Data Analysis.
 **Github**-Version Control and Portfolio Hosting
-**Power BI and Excel for Data Visualization
+**Power BI** and Excel for Data Visualization
 
 ## Key learning Outcomes
 Creating and Managing relational database tables
