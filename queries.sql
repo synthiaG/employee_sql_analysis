@@ -1,5 +1,3 @@
--- Show all columns from the Employees table.
-select * from Employees;
 
 -- Show all columns from the Departments table.
 select * from Departments;
@@ -12,6 +10,16 @@ select * from jobs;
 
 -- Show all columns from the locations table.
 select * from locations;
+
+-- Show all columns from the Employees table.
+select * from Employees;
+
+-- Show all columns from the Departments table.
+select * from Departments;
+
+
+
+
 
 -- Display only the first name, last name, and salary of employees.
 select F_NAME as FirstName,L_NAME As lastName ,SALARY from Employees;
@@ -79,7 +87,7 @@ select
     E2.F_NAME as Manager_FirstName,
     E2.L_NAME as Manager_LastName
 from Employees E1
-inner join Employees E2 
+left join Employees E2 
     on E1.MANAGER_ID = E2.EMP_ID;
 
 -- Display employees who changed jobs
@@ -89,7 +97,7 @@ L_NAME as LastName,
 E.JOB_ID as JOB_ID,
 JH.JOB_ID  
 from JOB_HISTORY JH
-join Employees E on JH.EMP_ID=E.EMP_ID
+right join Employees E on JH.EMP_ID=E.EMP_ID
 where  E.JOB_ID <>JH.JOB_ID ;
 
 -- Show all departments and the number of employees in each
@@ -108,7 +116,7 @@ SALARY as PAID_SALARY
 from Employees E
 where salary =
 (select max(SALARY)  as Highest_Paid from Employees E2
-where E2.DEPT_ID=E2.DEPT_ID );
+where E.DEPT_ID=E2.DEPT_ID );
 
 -- Show the department with the maximum average salary
 
@@ -130,7 +138,7 @@ DEPT_ID as Department_Id
 from Employees E
 where  SALARY>
 (select round(avg(salary),2) as Average_Salary FROM Employees E1
- WHERE E.DEPT_ID=E1.DEPT_ID) ;
+ where E.DEPT_ID=E1.DEPT_ID) ;
 -- If we want to compare Average Salary and Salary we use Window Function
 select* from( 
  
@@ -178,3 +186,12 @@ rank() over( partition by DEPT_ID   order by SALARY desc ) As SalaryRank
 from Employees E
 ) as Ranked
 where SalaryRank=1
+
+
+
+
+
+
+
+
+
