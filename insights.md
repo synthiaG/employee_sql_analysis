@@ -2,9 +2,10 @@
 The report summarises key insights  discovered through SQL analysis on the Employees Data set.
 The queries were designed to answer common HR questions about workforces, salary and departmental performaces.
 
-## 1 Cofirming the data
-**Question** Show all the columns in our table departments,employees,job_history,jobs,locations
-**Insight** To confirm if we have all our data and in the right format.
+## 1 Data Verification
+**Question** Show all the columns in the  table departments,employees,job_history,jobs,locations
+**Purpose**To confirm all the required data is available and in the correct format.
+**Insight** All tables contained complete and consistent records
 
 ## 2 Workforce Overview
 **Question** How many Employees work in each department?
@@ -27,7 +28,7 @@ Result:Arichitec group has the the highest Average Salary
 Used : Window Function 'rank() over() Partition by department '
 Result: Highest paid employee overall earns approximately 100,000,, located in the Architec Department and 80,000 located in Software Development Department.
 
-## 5 Salary Vs Department Averahe
+## 5 Salary Vs Department Average
 **Question**Which Employee earn more than their department Average?
 **Insight** Reveal Top Performance or cases where salary adjustment may be  needed.
 
@@ -42,6 +43,10 @@ Employess have no job history changes Indicating strong retention or lack of Int
 
 
 **Recommendation**
---
+Conduct a salary structure review to ensure equity across departments.
+
+Encourage internal mobility programs to retain and develop top talent.
+
+Introduce periodic workforce analytics to monitor salary trends and departmental growth.
 
 
