@@ -1,3 +1,12 @@
+create database Company_db;
+
+drop table if exists JOB_HISTORY; 
+drop table if exists JOBS; 
+drop table if exists DEPARTMENTS; 
+drop table if exists LOCATIONS;
+
+
+
 create table Employees
 (
 EMP_ID   CHAR(20) primary key ,
@@ -6,9 +15,9 @@ L_NAME  VARCHAR(50) not null,
 SSN  char (20),
 B_DATE DATE,
 SEX CHAR (1) ,
-ADDRESS  varchar(20),
+ADDRESS  varchar(50),
 JOB_ID INT ,
-SALARY  decimal  (10),
+SALARY  decimal  (10,2),
 MANAGER_ID INT ,
 DEPT_ID INT
 );
