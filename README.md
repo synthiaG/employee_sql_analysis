@@ -17,9 +17,12 @@ Writing subqueries
 Interpretating and communicating analytical insights
 
 Author 
-
 Synthia Atieno Oduor
+
 Junior Data Analyst| Actuarial Science Graduate
+
 Nairobi Kenya
+
+
 Synthiaoduor496@gmail.com
 www.linkedin.com/in/synthia-oduor-08b5361a7
